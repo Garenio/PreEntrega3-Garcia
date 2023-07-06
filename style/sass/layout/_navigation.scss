@@ -1,0 +1,95 @@
+header {
+    background-color: rgb(82, 82, 82);
+}
+
+.nav {
+
+    &__toggle {
+      position: absolute;
+      cursor: pointer;
+      margin: 0.8rem 1rem;
+      right: 0;
+  
+      img {
+        width: 1.5rem;
+      }
+  
+      .close {
+        display: none;
+      }
+  
+      .menu {
+        margin-top: 1rem;
+      }
+    }
+  
+    &__checkbox {
+      display: none;
+    }
+  
+    &__menu {
+        display: flex;
+        flex-direction: column;
+		justify-content: space-around;
+        align-items: center;  
+        padding: 0 0.8rem 0 0.8rem;
+  
+        li {
+            list-style: none;
+            display: none;;
+			padding: 0.8rem 0;
+    
+            &:first-child {
+            margin-right: auto;
+            display: block;
+            }
+        }
+  
+        a {
+            text-decoration: none;
+            color:white;
+            font-size: 1rem;
+			font-weight: 400;
+			&:hover {
+				color: rgb(245, 145, 123);
+				font-weight: 500;
+			}
+        }
+    
+        img {
+            width: 3.5rem;
+        }
+    }
+
+	@include desktop {
+        .nav {
+            &__toggle {
+              display: none;
+            }
+        
+            &__menu {
+				flex-direction: row;
+				gap: 1.5rem;
+        
+              li {
+                display: block;
+				padding: 0;
+              }
+            }
+        }
+    }
+}
+  
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+	display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+	display: block;
+	margin-top: 1rem;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+	display: none;
+}
