@@ -8,8 +8,12 @@
 
 #btn--login {
     @extend .btn;
-    background-color: $grisOscuro;
-    color: $rosaOscuro;
+    background-color: $plateado;
+    color: $grisOscuro;
+
+    &:hover {
+        background-color: $rosaOscuro;
+    }
 }
 
 #btn--rosaClaro {
@@ -22,6 +26,10 @@
     @extend .btn;
     background-color: $rosaOscuro;
     color: $grisOscuro;
+
+    &:hover {
+        background-color: $plateado;
+    }
 }
 
 #btn--grisClaro {

@@ -1,7 +1,11 @@
 header {
-    background-color: $grisClaro;
+	background: linear-gradient(90deg, $rosaOscuro 0%, $grisOscuro 100%);
     grid-area: header;
 	height: fit-content;
+
+	@include desktop {
+		background: linear-gradient(90deg, $rosaOscuro 0%, $grisOscuro 50%);
+	}
 }
 
 .nav {
