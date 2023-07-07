@@ -34,12 +34,17 @@ body {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        height: fit-content;
+
+        @include desktop {
+            height: 90vh;
+        }
 
 
         .quienesSomos__card {
             display: flex;
             flex: row;
-            align-items: center;
+            align-items: start;
             width: 80%;
             padding: 1rem 0;
 
@@ -48,12 +53,18 @@ body {
                 border-radius: 50%;
                 font-size: 5rem;
                 padding: 1rem;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
 
             .quienesSomos__card--text {
                 padding-left: 1rem;
                 h2 {
                     font-weight: 500;
+                    padding: 0.5rem 0;
                 }
             }
 

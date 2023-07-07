@@ -330,11 +330,17 @@ body #quienesSomos__contenido {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: fit-content;
+}
+@media only screen and (min-width: 560px) {
+  body #quienesSomos__contenido {
+    height: 90vh;
+  }
 }
 body #quienesSomos__contenido .quienesSomos__card {
   display: flex;
   flex: row;
-  align-items: center;
+  align-items: start;
   width: 80%;
   padding: 1rem 0;
 }
@@ -343,12 +349,17 @@ body #quienesSomos__contenido .quienesSomos__card .material-icons {
   border-radius: 50%;
   font-size: 5rem;
   padding: 1rem;
+  transition: transform 0.3s ease;
+}
+body #quienesSomos__contenido .quienesSomos__card .material-icons:hover {
+  transform: scale(1.1);
 }
 body #quienesSomos__contenido .quienesSomos__card .quienesSomos__card--text {
   padding-left: 1rem;
 }
 body #quienesSomos__contenido .quienesSomos__card .quienesSomos__card--text h2 {
   font-weight: 500;
+  padding: 0.5rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
