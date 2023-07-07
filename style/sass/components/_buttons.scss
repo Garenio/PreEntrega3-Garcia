@@ -1,0 +1,37 @@
+.btn {
+    padding: 0.6rem;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#btn--login {
+    @extend .btn;
+    background-color: $grisOscuro;
+    color: $rosaOscuro;
+}
+
+#btn--rosaClaro {
+    @extend .btn;
+    background-color: $rosaClaro;
+    color: $grisOscuro;
+}
+
+#btn--rosaOscuro {
+    @extend .btn;
+    background-color: $rosaOscuro;
+    color: $grisOscuro;
+}
+
+#btn--grisClaro {
+    @extend .btn;
+    background-color: $grisClaro;
+    color: $grisOscuro;
+}
+
+#btn--grisOscuro {
+    @extend .btn;
+    background-color: $grisOscuro;
+    color: $plateado;
+}

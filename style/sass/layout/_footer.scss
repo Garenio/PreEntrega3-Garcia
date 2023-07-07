@@ -1,0 +1,56 @@
+.footer {
+    background-color: rgb(82, 82, 82);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3rem;
+
+    &__logo {
+        img {
+            height: 75px;
+        }
+    }
+
+    &__creditos {
+        font-size: 0.8rem;
+        text-align: center;
+        h3 {
+            color: $plateado;
+            font-weight: 500;
+        }
+        p {
+            color: $grisOscuro;
+            font-weight: 500;
+            padding-bottom: 15px;
+        }
+    }
+
+    &__socials {
+        .material-icons {
+            color: $plateado;
+            font-size: 1.3rem;
+
+            &:hover {
+                color: $rosaOscuro;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .footer__logo {
+        img {
+            height: 45px;
+        }
+    }
+}

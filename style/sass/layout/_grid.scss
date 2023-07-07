@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "header     header"
+    "banner     banner"
+    "contenido  contenido"
+    "footer     footer";
+}
+
+@include desktop {
+    body {
+        grid-template-areas: 
+        "header     header"
+        "banner     contenido"
+        "banner     contenido"
+        "footer     footer";
+    }
+    
+    #grid-home {
+        grid-template-areas: 
+        "header     header"
+        "banner     banner"
+        "contenido  contenido"
+        "footer     footer";
+    }
+}

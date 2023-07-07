@@ -1,6 +1,18 @@
+/* VARIABLES Y MIXINS */
+@import '../sass/abstracts/_variables.scss';
 @import '../sass/abstracts/_mixins.scss';
 
+/* RESETS Y TIPOGRAFÍAS */
 @import '../sass/base/_reset.scss';
 @import '../sass/base/_typography.scss';
 
+/* LAYOUT GENERAL */
 @import '../sass/layout/_navigation.scss';
+@import '../sass/layout/_grid.scss';
+@import '../sass/layout/_footer.scss';
+
+/* COMPONENTES */
+@import '../sass/components/_buttons.scss';
+
+/* PÁGINAS */
+@import '../sass/pages/_home.scss';

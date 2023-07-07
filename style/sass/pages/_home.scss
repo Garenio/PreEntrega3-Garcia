@@ -1,0 +1,105 @@
+body {
+    #banner-home {
+        grid-area: banner;
+        background-image: url('../../../img/bghome1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        height:fit-content;
+        padding: 1.5rem 0;
+
+        h1 {
+            font-weight: 300;
+            font-size: 2.5rem;
+            color: $plateado;
+            text-align: center;
+            max-width: 90%;
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        p {
+            max-width: 90%;
+            padding: 2rem;
+            text-align: center;
+            color: $plateado;
+            font-weight: 300;
+        }
+
+        @include desktop {
+            height: 60vh;
+
+            p {
+                max-width: 70%;
+            }
+        }
+    }
+    
+    #contenido-home {
+        grid-area: contenido;
+        background-color: $plateado;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .cardHome1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 80%;
+            padding: 2rem 0;
+
+            p {
+                padding: 1rem 0 1rem;
+                text-align:justify;
+            }
+
+            a {
+                max-width: 200px;
+            }
+        }
+
+        .cardHome2 {
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+            padding: 2rem 0;
+            max-width: 90%;
+
+            img {
+                width: 10rem;
+                padding: 0 0.5rem;
+            }
+
+            div {
+                h3 {
+                    font-size: 1.5rem;
+                    padding: 0.5rem;
+                }
+            }
+        }
+
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .cardHome1 {
+                width: 40%;
+            }
+
+            .cardHome2 {
+                width: 40%;
+            }
+        }
+    }
+}
