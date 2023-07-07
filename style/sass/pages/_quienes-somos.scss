@@ -1,0 +1,62 @@
+body {
+    #quienesSomos__banner {
+        grid-area: banner;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: $plateado;
+
+        img {
+            width: 80%;
+            border-radius: 50px;
+            box-shadow: 3px 3px 10px rgba(56, 56, 56, 0.445);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 300;
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+        p {
+            text-align: center;
+            padding: 1rem;
+            max-width: 90%;
+        }
+    }
+
+    #quienesSomos__contenido {
+        grid-area: contenido;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+
+        .quienesSomos__card {
+            display: flex;
+            flex: row;
+            align-items: center;
+            width: 80%;
+            padding: 1rem 0;
+
+            .material-icons {
+                background-color: $rosaOscuro;
+                border-radius: 50%;
+                font-size: 5rem;
+                padding: 1rem;
+            }
+
+            .quienesSomos__card--text {
+                padding-left: 1rem;
+                h2 {
+                    font-weight: 500;
+                }
+            }
+
+        }
+    }
+}

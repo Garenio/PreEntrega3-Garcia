@@ -98,7 +98,7 @@ header {
 
 body {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 40% auto;
   grid-template-areas: "header     header" "banner     banner" "contenido  contenido" "footer     footer";
 }
 
@@ -203,7 +203,7 @@ body {
 }
 
 /* PÁGINAS */
-body #banner-home {
+body #home__banner {
   grid-area: banner;
   background-image: url("../../../img/bghome1.jpg");
   background-size: cover;
@@ -216,17 +216,17 @@ body #banner-home {
   height: fit-content;
   padding: 1.5rem 0;
 }
-body #banner-home h1 {
+body #home__banner h1 {
   font-weight: 300;
   font-size: 2.5rem;
   color: #D6D6D6;
   text-align: center;
   max-width: 90%;
 }
-body #banner-home h1 span {
+body #home__banner h1 span {
   font-weight: 500;
 }
-body #banner-home p {
+body #home__banner p {
   max-width: 90%;
   padding: 2rem;
   text-align: center;
@@ -234,14 +234,14 @@ body #banner-home p {
   font-weight: 300;
 }
 @media only screen and (min-width: 560px) {
-  body #banner-home {
+  body #home__banner {
     height: 60vh;
   }
-  body #banner-home p {
+  body #home__banner p {
     max-width: 70%;
   }
 }
-body #contenido-home {
+body #home__contenido {
   grid-area: contenido;
   background-color: #D6D6D6;
   height: fit-content;
@@ -250,26 +250,26 @@ body #contenido-home {
   justify-content: space-around;
   align-items: center;
 }
-body #contenido-home .cardHome1 {
+body #home__contenido .cardHome1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 80%;
   padding: 2rem 0;
 }
-body #contenido-home .cardHome1 p {
+body #home__contenido .cardHome1 p {
   padding: 1rem 0 1rem;
   text-align: justify;
 }
-body #contenido-home .cardHome1 a {
+body #home__contenido .cardHome1 a {
   max-width: 200px;
 }
 @media only screen and (min-width: 560px) {
-  body #contenido-home .cardHome1 a {
+  body #home__contenido .cardHome1 a {
     max-width: 400px;
   }
 }
-body #contenido-home .cardHome2 {
+body #home__contenido .cardHome2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -277,26 +277,78 @@ body #contenido-home .cardHome2 {
   padding: 2rem 0;
   max-width: 90%;
 }
-body #contenido-home .cardHome2 img {
+body #home__contenido .cardHome2 img {
   width: 10rem;
   padding: 0 0.5rem;
 }
-body #contenido-home .cardHome2 div h3 {
+body #home__contenido .cardHome2 div h3 {
   font-size: 1.5rem;
   padding: 0.5rem;
 }
 @media only screen and (min-width: 560px) {
-  body #contenido-home {
+  body #home__contenido {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  body #contenido-home .cardHome1 {
+  body #home__contenido .cardHome1 {
     width: 40%;
   }
-  body #contenido-home .cardHome2 {
+  body #home__contenido .cardHome2 {
     width: 40%;
   }
+}
+
+body #quienesSomos__banner {
+  grid-area: banner;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #D6D6D6;
+}
+body #quienesSomos__banner img {
+  width: 80%;
+  border-radius: 50px;
+  box-shadow: 3px 3px 10px rgba(56, 56, 56, 0.445);
+}
+body #quienesSomos__banner h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 1rem;
+}
+body #quienesSomos__banner p {
+  text-align: center;
+  padding: 1rem;
+  max-width: 90%;
+}
+body #quienesSomos__contenido {
+  grid-area: contenido;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body #quienesSomos__contenido .quienesSomos__card {
+  display: flex;
+  flex: row;
+  align-items: center;
+  width: 80%;
+  padding: 1rem 0;
+}
+body #quienesSomos__contenido .quienesSomos__card .material-icons {
+  background-color: #F58F7C;
+  border-radius: 50%;
+  font-size: 5rem;
+  padding: 1rem;
+}
+body #quienesSomos__contenido .quienesSomos__card .quienesSomos__card--text {
+  padding-left: 1rem;
+}
+body #quienesSomos__contenido .quienesSomos__card .quienesSomos__card--text h2 {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

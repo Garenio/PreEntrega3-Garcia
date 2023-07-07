@@ -1,5 +1,5 @@
 body {
-    #banner-home {
+    #home__banner {
         grid-area: banner;
         background-image: url('../../../img/bghome1.jpg');
         background-size: cover;
@@ -41,7 +41,7 @@ body {
         }
     }
     
-    #contenido-home {
+    #home__contenido {
         grid-area: contenido;
         background-color: $plateado;
         height:fit-content;
