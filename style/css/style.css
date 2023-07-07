@@ -168,6 +168,7 @@ body {
 #btn--login {
   background-color: #D6D6D6;
   color: #2C2B30;
+  transition: transform 0.3s ease;
 }
 #btn--login:hover {
   background-color: #F58F7C;
@@ -194,6 +195,11 @@ body {
 #btn--grisOscuro {
   background-color: #2C2B30;
   color: #D6D6D6;
+  transition: transform 0.3s ease;
+}
+#btn--grisOscuro:hover {
+  color: #D6D6D6;
+  transform: scale(1.1);
 }
 
 /* PÁGINAS */
@@ -257,6 +263,11 @@ body #contenido-home .cardHome1 p {
 }
 body #contenido-home .cardHome1 a {
   max-width: 200px;
+}
+@media only screen and (min-width: 560px) {
+  body #contenido-home .cardHome1 a {
+    max-width: 400px;
+  }
 }
 body #contenido-home .cardHome2 {
   display: flex;

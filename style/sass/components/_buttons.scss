@@ -10,6 +10,7 @@
     @extend .btn;
     background-color: $plateado;
     color: $grisOscuro;
+    transition: transform 0.3s ease;
 
     &:hover {
         background-color: $rosaOscuro;
@@ -42,4 +43,10 @@
     @extend .btn;
     background-color: $grisOscuro;
     color: $plateado;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        color: $plateado;
+        transform: scale(1.1);
+    }
 }
