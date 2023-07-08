@@ -3,7 +3,7 @@ header {
     grid-area: header;
 	height: fit-content;
 
-	@include desktop {
+	@include notebook {
 		background: linear-gradient(90deg, $rosaOscuro 0%, $grisOscuro 50%);
 	}
 }
@@ -67,7 +67,7 @@ header {
         }
     }
 
-	@include desktop {
+	@include notebook {
         .nav {
             &__toggle {
               display: none;

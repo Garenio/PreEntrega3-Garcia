@@ -40,7 +40,7 @@
     }
 }
 
-@include desktop {
+@include notebook {
     .footer {
         display: flex;
         flex-direction: row;

@@ -1,7 +1,7 @@
 body {
     #home__banner {
         grid-area: banner;
-        background-image: url('../../../img/bghome1.jpg');
+        background-image: url('../../img/bghome1.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body {
             font-weight: 300;
         }
 
-        @include desktop {
+        @include notebook {
             height: 60vh;
 
             p {
@@ -66,7 +66,7 @@ body {
                 max-width: 200px;
             }
 
-            @include desktop {
+            @include notebook {
                 a {
                     max-width: 400px;
                 }
@@ -94,7 +94,7 @@ body {
             }
         }
 
-        @include desktop {
+        @include notebook {
             flex-direction: row;
             justify-content: space-around;
             align-items: center;

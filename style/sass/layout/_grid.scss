@@ -8,7 +8,7 @@ body {
     "footer     footer";
 }
 
-@include desktop {
+@include notebook {
     body {
         grid-template-areas: 
         "header     header"
