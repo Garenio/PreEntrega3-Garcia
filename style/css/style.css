@@ -299,9 +299,6 @@ body #home__contenido .cardHome2 div h3 {
   }
 }
 
-body {
-  height: 100vh;
-}
 body #quienesSomos__banner {
   grid-area: banner;
   display: flex;
@@ -314,7 +311,7 @@ body #quienesSomos__banner {
 }
 @media only screen and (min-width: 768px) {
   body #quienesSomos__banner {
-    height: 100vh;
+    height: auto;
   }
 }
 body #quienesSomos__banner img {
@@ -343,12 +340,8 @@ body #quienesSomos__contenido {
 }
 @media only screen and (min-width: 768px) {
   body #quienesSomos__contenido {
-    height: 100vh;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body #quienesSomos__contenido {
-    justify-content: center;
+    justify-content: space-around;
+    align-self: center;
   }
 }
 body #quienesSomos__contenido .quienesSomos__card {
@@ -379,6 +372,4 @@ body #quienesSomos__contenido .quienesSomos__card .quienesSomos__card--text {
 body #quienesSomos__contenido .quienesSomos__card .quienesSomos__card--text h2 {
   font-weight: 500;
   padding: 0.5rem 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

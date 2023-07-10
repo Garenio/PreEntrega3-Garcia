@@ -1,5 +1,4 @@
 body {
-    height: 100vh;
     #quienesSomos__banner {
         grid-area: banner;
         display: flex;
@@ -11,7 +10,7 @@ body {
         height: fit-content;
 
         @include notebook {
-            height: 100vh;
+            height: auto;
 
         }
 
@@ -44,11 +43,9 @@ body {
         height: fit-content;
 
         @include notebook {
-            height:100vh;
-        }
 
-        @include largeScreen {
-            justify-content: center;
+            justify-content: space-around;
+            align-self: center;
         }
 
 
