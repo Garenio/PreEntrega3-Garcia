@@ -106,7 +106,7 @@ body {
   body {
     grid-template-areas: "header     header" "banner     contenido" "banner     contenido" "footer     footer";
   }
-  #grid-home {
+  #grid-2 {
     grid-template-areas: "header     header" "banner     banner" "contenido  contenido" "footer     footer";
   }
 }
@@ -372,4 +372,120 @@ body #quienesSomos__contenido .quienesSomos__card .quienesSomos__card--text {
 body #quienesSomos__contenido .quienesSomos__card .quienesSomos__card--text h2 {
   font-weight: 500;
   padding: 0.5rem 0;
+}
+
+body #metodos__banner {
+  grid-area: banner;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  background-color: #4F4F51;
+}
+@media only screen and (min-width: 768px) {
+  body #metodos__banner {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  body #metodos__banner .metodos__banner--texto {
+    width: 40%;
+  }
+  body #metodos__banner .metodos__banner--texto h1 {
+    padding: 1.5rem 0;
+  }
+  body #metodos__banner .metodos__banner--texto h5 {
+    padding: 1.5rem 0;
+  }
+}
+body #metodos__banner .metodos__banner--video iframe {
+  padding: 1rem 0;
+  width: 320px;
+  height: 180px;
+}
+@media only screen and (min-width: 768px) {
+  body #metodos__banner .metodos__banner--video iframe {
+    padding: 1rem 0;
+    width: 560px;
+    height: 315px;
+  }
+}
+body #metodos__banner .metodos__banner--texto {
+  max-width: 85%;
+  color: #D6D6D6;
+  text-align: right;
+  padding: 2rem 0;
+}
+body #metodos__banner .metodos__banner--texto h1 {
+  font-size: 1.8rem;
+}
+body #metodos__banner .metodos__banner--texto h1 span {
+  font-weight: bold;
+}
+body #metodos__banner .metodos__banner--texto p {
+  padding: 1rem 0;
+}
+body #metodos__banner .metodos__banner--texto h5 {
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: bold;
+}
+body #metodos__contenido {
+  grid-area: contenido;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  padding: 2rem;
+  background-color: #D6D6D6;
+}
+@media only screen and (min-width: 480px) {
+  body #metodos__contenido {
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+body #metodos__contenido .metodos__contenido--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #F58F7C 0%, #F2C4CE 100%);
+  width: 98%;
+  box-shadow: 0px 5px 10px #2C2B30;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+body #metodos__contenido .metodos__contenido--card:hover {
+  transform: translate(5px, -5px);
+}
+@media only screen and (min-width: 480px) {
+  body #metodos__contenido .metodos__contenido--card {
+    width: 250px;
+  }
+}
+body #metodos__contenido .metodos__contenido--card .material-icons {
+  color: white;
+  font-size: 8rem;
+  margin: 0.5rem;
+}
+body #metodos__contenido .metodos__contenido--card h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  color: #2C2B30;
+}
+body #metodos__contenido .metodos__contenido--card p {
+  background-color: white;
+  line-height: 3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+body #metodos__contenido a {
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
