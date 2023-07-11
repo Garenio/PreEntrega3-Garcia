@@ -449,7 +449,7 @@ body #metodos__banner .metodos__banner--texto p {
 }
 body #metodos__banner .metodos__banner--texto h5 {
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 body #metodos__contenido {
   grid-area: contenido;
