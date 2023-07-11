@@ -15,9 +15,13 @@ body {
         }
 
         img {
-            width: 80%;
-            border-radius: 50px;
+            width: 90%;
+            border-radius: 15px;
             box-shadow: 3px 3px 10px rgba(56, 56, 56, 0.445);
+
+            @include notebook {
+                border-radius: 35px;
+            }
         }
 
         h1 {
