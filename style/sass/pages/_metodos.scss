@@ -1,3 +1,4 @@
+/* ------> METODOS <------ */
 body {
     #metodos__banner {
         grid-area: banner;
@@ -48,7 +49,7 @@ body {
             padding: 2rem 0;
 
             h1 {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
 
                 span {
                     font-weight: bold;
@@ -57,12 +58,12 @@ body {
 
             p {
                 padding: 1rem 0;
-                font-size: 1.5rem;
+                font-size: 1rem;
             }
 
             h5 {
                 font-style: italic;
-                font-size: 1.2rem;
+                font-size: 0.8rem;
             }
         }
     }
@@ -90,7 +91,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(180deg, $rosaOscuro 0%, $rosaClaro 100%);
+            background: linear-gradient(180deg, $rosaOscuro 50%, $rosaClaro 100%);
             width: 98%;
             box-shadow: 0px 5px 10px $grisOscuro;
             margin: 1rem;
