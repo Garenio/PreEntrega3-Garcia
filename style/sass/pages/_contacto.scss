@@ -5,7 +5,13 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: fit-content;
         background-color: $plateado;
+        padding-bottom: 2rem;
+
+        @include notebook {
+            height: auto;
+        }
 
         .material-icons {
             font-size: 10rem;
@@ -16,6 +22,7 @@ body {
             font-size: 2rem;
             font-weight: bold;
             color: $grisOscuro;
+            text-align: center;
         }
 
         p {
@@ -35,17 +42,32 @@ body {
         align-items: center;
         background-color: $grisClaro;
 
+
         .contacto__formulario {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            @include notebook {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
             &--imagen {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 margin: 1rem;
-                width: 40%;
+                width: 90%;
+
+                @include notebook {
+                    width: 40%;
+                }
+
                 img {
                     width: 90%;
                 }
@@ -61,7 +83,12 @@ body {
                 display: flex;
                 flex-direction: column;
                 padding: 3rem;
-                width: 60%;
+                width: 90%;
+
+                @include notebook {
+                    width: 60%;
+                }
+                
                 form {
                     height: 100%;
                     display: flex;
